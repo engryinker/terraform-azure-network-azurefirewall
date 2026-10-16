@@ -56,7 +56,7 @@ variable "firewalls" {
     diagnostic_settings                  = optional(any, null)
     firewall_management_ip_configuration = optional(any, null)
     firewall_private_ip_ranges           = optional(set(string), null)
-    firewall_zones                       = optional(set(string), null)
+    firewall_zones                       = optional(set(string), ["1", "2", "3"])
     firewall_sku_name                    = string
     firewall_sku_tier                    = string
     ip_configurations                    = optional(any, null)
